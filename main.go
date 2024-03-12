@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"log"
 
@@ -12,6 +13,9 @@ func main() {
 	fmt.Print("Hellow")
 	app := fiber.New()
 	routes.SetRoutes(app)
-	log.Println("Server started on http://localhost:3000")
-	log.Fatal(app.Listen(":3000"))
+	// command line arguments
+	addr := flag.String("addr", "4000", "HTTP network address")
+	flag.Parse()
+	log.Println("Server started on http://localhost:", *addr)
+	log.Fatal(app.Listen(":" + *addr))
 }
