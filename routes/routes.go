@@ -9,4 +9,5 @@ func home(c *fiber.Ctx) {
 func SetRoutes(app *fiber.App) {
 	app.Get("/", home)
 	empRoutes(app)
+	accRoutes(app)
 }

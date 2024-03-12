@@ -6,5 +6,5 @@ import (
 )
 
 func accRoutes(app *fiber.App) {
-	app.Get("/accounts", controllers.GetUsers)
+	app.Get("/accounts", controllers.GetAccounts)
 }
