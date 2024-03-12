@@ -1,0 +1,22 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with 'go test -c'
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below if you're planning to use modules)
+# vendor/
+
+# The following are the most common filenames. Remove if you are not using them or want to ignore additional specific files.
+.idea/
+.vscode/
+.DS_Store
+
+/tmp/*
