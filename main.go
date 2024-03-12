@@ -5,12 +5,14 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/JayeshKarandeDev/fiberFramework/configs"
 	"github.com/JayeshKarandeDev/fiberFramework/routes"
 	"github.com/gofiber/fiber"
 )
 
 func main() {
-	fmt.Print("Hellow")
+	fmt.Println("Hellow Fibre Service")
+	configs.ConfigsLoad()
 	app := fiber.New()
 	routes.SetRoutes(app)
 	// command line arguments
