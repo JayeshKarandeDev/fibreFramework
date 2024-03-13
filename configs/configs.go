@@ -34,4 +34,6 @@ func ConfigsLoad() {
 
 	fmt.Println(config)
 
+	DBConnect()
+
 }
